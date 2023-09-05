@@ -1,5 +1,5 @@
-const APP_NAME = 'MorpgHealth';
-const APP_FIRST_NAME = 'Morpg';
+const APP_NAME = 'MorgpHealth';
+const APP_FIRST_NAME = 'Morgp';
 const APP_SECOND_NAME = 'Health';
 
 //LIVE
@@ -9,7 +9,7 @@ const BASE_URL = '$DOMAIN_URL/wp-json/';
 
 const IQONIC_PACKAGE_NAME = "com.iqonic.kivicare"; // Do not change this Package Name.
 const DEFAULT_LANGUAGE = 'en';
-var COPY_RIGHT_TEXT = '© ${DateTime.now().year}. MorpgHealth';
+var COPY_RIGHT_TEXT = '© ${DateTime.now().year}. MorgpHealth';
 
 const TERMS_AND_CONDITION_URL = 'https://iqonic.design/terms-of-use/';
 const PRIVACY_POLICY_URL = 'https://iqonic.design/privacy-policy/';

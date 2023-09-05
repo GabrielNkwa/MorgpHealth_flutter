@@ -14,6 +14,8 @@ import 'package:kivicare_flutter/utils/images.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
+import 'fragments/patient_insurance_fragment.dart';
+
 class PatientDashBoardScreen extends StatefulWidget {
   @override
   _PatientDashBoardScreenState createState() => _PatientDashBoardScreenState();
@@ -72,6 +74,7 @@ class _PatientDashBoardScreenState extends State<PatientDashBoardScreen> {
               PatientDashBoardFragment(),
               PatientAppointmentFragment(),
               // FeedFragment(),
+              Insurance(),
               SettingFragment(),
             ][patientStore.bottomNavIndex],
             bottomNavigationBar: Blur(
@@ -102,12 +105,12 @@ class _PatientDashBoardScreenState extends State<PatientDashBoardScreen> {
                       label: locale.lblAppointments,
                       selectedIcon: Image.asset(ic_calendar, height: iconSize, width: iconSize, color: primaryColor),
                     ),
-                    // NavigationDestination(
-                    //   icon: Image.asset(ic_document, height: iconSize, width: iconSize, color: disableIconColor),
-                    //   label: "Insurance",
-                    //   selectedIcon: Image.asset(ic_document, height: iconSize, width: iconSize, color: primaryColor),
-                    //
-                    // ),
+                    NavigationDestination(
+                      icon: Image.asset(ic_document, height: iconSize, width: iconSize, color: disableIconColor),
+                      label: "Insurance",
+                      selectedIcon: Image.asset(ic_document, height: iconSize, width: iconSize, color: primaryColor),
+
+                    ),
                     NavigationDestination(
                       icon: Image.asset(ic_more_item, height: iconSize, width: iconSize, color: disableIconColor),
                       label: locale.lblSettings,
