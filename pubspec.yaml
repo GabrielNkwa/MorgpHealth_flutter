@@ -1,0 +1,96 @@
+name: kivicare_flutter
+description: A new Flutter application.
+
+publish_to: 'none'
+
+version: 8.0.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.5
+
+
+  # Firebase for crashlytics
+
+  firebase_crashlytics: ^3.3.3
+  firebase_analytics: ^10.4.3
+  firebase_remote_config: ^4.2.3
+  google_fonts: ^5.1.0
+  moment_dart: ^0.17.4
+
+
+  #State Management Technique
+  mobx: ^2.2.0
+  flutter_mobx: ^2.0.6+5
+
+  nb_utils: ^6.0.0
+  scan: ^1.6.0
+
+  #API calling
+  http: ^1.1.0
+  html: ^0.15.4
+  shimmer: ^3.0.0
+  flutter_html: ^3.0.0-alpha.6
+  intl: ^0.18.1
+
+  # Images and Icons
+
+  flutter_svg: ^2.0.7
+  font_awesome_flutter: ^10.5.0
+  cached_network_image: ^3.2.3
+  webview_flutter: ^4.2.4
+  flutter_slidable: ^3.0.0
+  percent_indicator: ^4.2.3
+  signature: ^5.4.0
+  path_provider: ^2.0.15
+  photo_view: ^0.14.0
+  # bar chart
+  fl_chart: ^0.63.0
+
+  #APP Information
+  url_launcher: ^6.1.12
+  share: ^2.0.4
+  flutter_custom_tabs: ^1.0.4
+  get_storage: ^2.1.1
+
+  # Pickers for image and file and dates
+  file_picker: ^5.3.2
+  image_picker: ^1.0.1
+  open_file: ^3.3.2
+  syncfusion_flutter_datepicker: ^22.2.10
+
+  #OnsSignal
+  onesignal_flutter: ^3.5.1
+
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mobx_codegen: ^2.3.0
+  build_runner: ^2.4.6
+  #flutter packages pub run build_runner build --delete-conflicting-outputs
+
+dependency_overrides:
+  intl: ^0.17.0-nullsafety.2
+  http: ^0.13.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - images/
+    - images/icons/
+    - images/flags/
+    - images/filesFormat/
+
+https://gitlab:
+  com/gmits_mobile/service-provider-app/provider_flutter:
+    git:
